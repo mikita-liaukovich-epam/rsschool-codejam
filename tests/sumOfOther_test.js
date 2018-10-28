@@ -1,4 +1,5 @@
 const assert = require('assert');
+
 Object.freeze(assert);
 const sumOfOther = require('../src/sumOfOther.js');
 
@@ -15,5 +16,4 @@ describe('sumOfOther', () => {
     const result = sumOfOther([1, 5, 6, 8, 10, 122]);
     assert.deepEqual(result, [151, 147, 146, 144, 142, 30]);
   });
-
 });
